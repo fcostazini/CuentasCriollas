@@ -1,14 +1,8 @@
 package com.studios.thinkup.cuentascriollas;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.KeyEvent;
-import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -77,7 +71,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
             });
 
         }
-        CheckBox isFirst = (CheckBox) findViewById(R.id.es_primer_compra);
+        CheckBox isFirst = (CheckBox) findViewById(R.id.conyuge_acargo);
         if (isFirst != null) {
             isFirst.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
@@ -97,7 +91,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
     protected void updateAPagar() {
         EditText prodValue = (EditText) findViewById(R.id.inp_dolar);
         EditText cotizacion = (EditText) findViewById(R.id.valor_cotizacion);
-        CheckBox isFirst = (CheckBox) findViewById(R.id.es_primer_compra);
+        CheckBox isFirst = (CheckBox) findViewById(R.id.conyuge_acargo);
         TextView valorPesos = (TextView) findViewById(R.id.val_prod_peso);
         TextView valorImpuestos = (TextView) findViewById(R.id.val_imp_peso);
         TextView valorAPagar = (TextView) findViewById(R.id.val_a_pagar);

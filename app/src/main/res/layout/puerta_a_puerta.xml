@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.studios.thinkup.cuentascriollas.PuertaAPuertaActivity"
-    tools:showIn="@layout/activity_puerta_apuerta">
+    >
 
 
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/es_primer_compra"
-        android:id="@+id/es_primer_compra"
+        android:id="@+id/conyuge_acargo"
         android:layout_below="@+id/inp_dolar"
         android:layout_alignStart="@+id/textView2"
         android:layout_marginTop="7dp"
@@ -53,8 +53,8 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
         android:text="@string/cotizacion_dolar"
         android:id="@+id/cotizacion_lab"
-        android:layout_below="@+id/es_primer_compra"
-        android:layout_alignStart="@+id/es_primer_compra"
+        android:layout_below="@+id/conyuge_acargo"
+        android:layout_alignStart="@+id/conyuge_acargo"
         android:layout_marginTop="7dp"
         android:padding="5dp" />
 
@@ -128,7 +128,7 @@
         android:textAlignment="viewEnd"
         android:layout_above="@+id/textView4"
         android:layout_alignEnd="@+id/val_prod_peso"
-        android:layout_toEndOf="@+id/es_primer_compra"
+        android:layout_toEndOf="@+id/conyuge_acargo"
         android:background="@drawable/input_background"
         android:padding="5dp"
         android:textColor="@android:color/holo_blue_dark" />
