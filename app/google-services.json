@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "107051912890",
+    "firebase_url": "https://cuentas-criollas-8c965.firebaseio.com",
+    "project_id": "cuentas-criollas-8c965",
+    "storage_bucket": "cuentas-criollas-8c965.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107051912890:android:b09357d07258fe12",
+        "android_client_info": {
+          "package_name": "com.studios.thinkup.cuentascriollas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107051912890-7mpdpej5bj626p75ndh7vv7d4e284m30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Gk0_7dQTIDLuqFXa6kwr_z6TCeWX4-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
