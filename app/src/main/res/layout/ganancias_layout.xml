@@ -244,10 +244,10 @@
         android:gravity="center"
         android:layout_marginLeft="20dp"
         android:textColor="#140c0c"
-        android:layout_alignTop="@+id/txt_aportes"
         android:layout_alignStart="@+id/txt_aportes"
         android:layout_above="@+id/textView19"
-        android:layout_alignEnd="@+id/textView17" />
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_alignTop="@+id/txt_aportes" />
 
     <TextView
         android:layout_width="match_parent"
@@ -299,10 +299,10 @@
         android:gravity="center"
         android:layout_marginLeft="20dp"
         android:textColor="#140c0c"
-        android:layout_below="@+id/textView19"
         android:layout_alignStart="@+id/txt_desc"
         android:layout_above="@+id/textView20"
-        android:layout_alignEnd="@+id/textView21" />
+        android:layout_alignEnd="@+id/textView21"
+        android:layout_alignTop="@+id/txt_desc" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -314,19 +314,173 @@
         android:gravity="center"
         android:layout_marginLeft="20dp"
         android:textColor="@android:color/holo_blue_dark"
-        android:layout_below="@+id/textView20"
         android:layout_alignParentStart="true"
         android:layout_alignBottom="@+id/txt_sueldo_neto"
-        android:layout_alignEnd="@+id/textView22" />
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_alignTop="@+id/txt_sueldo_neto" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/editText"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:layout_alignBottom="@+id/textView7"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_alignTop="@+id/textView7"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/textView10"
-        android:text="1" />
+        android:layout_alignEnd="@+id/conyuge_acargo"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_above="@+id/textView14"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_above="@+id/textView16"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView24"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="#140c0c"
+        android:layout_above="@+id/textView16"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView25"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="#140c0c"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:textSize="10dp"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignEnd="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView26"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="#140c0c"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:textSize="10dp"
+        android:layout_alignBottom="@+id/editText3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView27"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="#140c0c"
+        android:textSize="10dp"
+        android:layout_alignTop="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignEnd="@+id/textView24" />
+
 </RelativeLayout>
