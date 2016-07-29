@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.studios.thinkup.cuentascriollas.PuertaAPuertaActivity"
+   >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Sueldo Bruto"
+        android:id="@+id/lab_sueldo_bruto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/txt_sueldo_bruto"
+        android:layout_toStartOf="@+id/txt_sueldo_bruto"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txt_sueldo_bruto"
+        android:background="@drawable/input_background"
+        android:padding="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#140c0c"
+        android:hint="@string/sin_descuentos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conyuge_a_cargo"
+        android:id="@+id/conyuge_acargo"
+        android:checked="false"
+        android:layout_below="@+id/txt_sueldo_bruto"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_sueldo_bruto"
+        android:layout_marginTop="5dp" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@+id/txt_sueldo_bruto"
+        android:textColor="#140c0c"
+        android:layout_alignTop="@+id/txt_sueldo_bruto"
+        android:layout_above="@+id/conyuge_acargo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Familiares a cargo"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/conyuge_acargo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cantidad de hijos"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cred. hipotecarios"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Servicio doméstico"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Seguro de vida"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gastos sepelio"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Descuento Ganancias"
+        android:id="@+id/lab_descuentos_ganancia"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aportes"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/desc_ganancia"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Descuentos Totales"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/txt_aportes"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sueldo Neto"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/txt_desc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0.00"
+        android:id="@+id/desc_ganancia"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="viewEnd"
+        android:background="@color/design_fab_stroke_end_inner_color"
+        android:layout_below="@+id/lab_descuentos_ganancia"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView17"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignTop="@+id/desc_ganancia"
+        android:layout_alignStart="@+id/desc_ganancia"
+        android:layout_above="@+id/textView18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0.00"
+        android:id="@+id/txt_aportes"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="viewEnd"
+        android:background="@color/design_fab_stroke_end_inner_color"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/switch_thumb_disabled_material_dark"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView21"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="#140c0c"
+        android:layout_alignTop="@+id/txt_aportes"
+        android:layout_alignStart="@+id/txt_aportes"
+        android:layout_above="@+id/textView19"
+        android:layout_alignEnd="@+id/textView17" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0.00"
+        android:id="@+id/txt_desc"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="viewEnd"
+        android:background="@color/design_fab_stroke_end_inner_color"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/switch_thumb_disabled_material_dark"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0.00"
+        android:id="@+id/txt_sueldo_neto"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="viewEnd"
+        android:background="@color/design_fab_stroke_end_inner_color"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$"
+        android:id="@+id/textView22"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="#140c0c"
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/txt_desc"
+        android:layout_above="@+id/textView20"
+        android:layout_alignEnd="@+id/textView21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$"
+        android:id="@+id/textView23"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/txt_sueldo_neto"
+        android:layout_alignEnd="@+id/textView22" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/textView10"
+        android:text="1" />
+</RelativeLayout>
