@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cuentas Criollas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_puerta_apuerta">PuertaAPuertaActivity</string>
+    <string name="puerta_a_puerta">Puerta a Puerta</string>
+    <string name="promo">\nAlgo rapido para sacar cuentas?\n\n</string>
+    <string name="ingrese_valor_dolares">Ingresá el valor de compra en dólares</string>
+    <string name="es_primer_compra">Es la primer compra del año?</string>
+    <string name="valor_en_u_s">Valor en U$S</string>
+    <string name="total_a_pagar">Total a pagar</string>
+    <string name="impuestos_en_pesos">Impuestos en Pesos</string>
+    <string name="valor_en_pesos">Valor del producto en Pesos</string>
+    <string name="cotizacion_dolar">Cotización Dolar</string>
+</resources>
