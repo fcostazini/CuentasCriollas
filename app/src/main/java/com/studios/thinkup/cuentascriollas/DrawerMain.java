@@ -75,7 +75,8 @@ DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (id == R.id.nav_puerta_puerta) {
             startActivity(new Intent(this, PuertaAPuertaActivity.class));
-
+        } else if (id == R.id.nav_ganancias) {
+            startActivity(new Intent(this, GananciasActivity.class));
         } else if (id == R.id.nav_stars) {
             final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
             try {

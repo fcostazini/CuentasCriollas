@@ -6,10 +6,14 @@
             android:id="@+id/nav_puerta_puerta"
             android:icon="@drawable/ic_puerta_a_puerta"
             android:title="@string/puerta_a_puerta" />
+        <item
+            android:id="@+id/nav_ganancias"
+            android:icon="@drawable/ic_menu_ganancias"
+            android:title="@string/ganancias" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Compartir">
         <menu>
             <item
                 android:id="@+id/nav_share"

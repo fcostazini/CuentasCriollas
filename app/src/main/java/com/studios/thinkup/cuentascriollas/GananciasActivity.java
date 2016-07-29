@@ -26,60 +26,6 @@ public class GananciasActivity extends DrawerMain {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        final EditText prodValue = (EditText) findViewById(R.id.inp_dolar);
-        if (prodValue != null) {
-            prodValue.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-                }
-
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                }
-
-                @Override
-                public void afterTextChanged(Editable s) {
-                    if (s.length() > 0) {
-                        updateAPagar();
-                    }
-
-                }
-            });
-        }
-        EditText cotizacion = (EditText) findViewById(R.id.valor_cotizacion);
-        if (cotizacion != null) {
-            cotizacion.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-                }
-
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                }
-
-                @Override
-                public void afterTextChanged(Editable s) {
-                    if (s.length() > 0) {
-                        updateAPagar();
-                    }
-
-                }
-            });
-
-        }
-        CheckBox isFirst = (CheckBox) findViewById(R.id.conyuge_acargo);
-        if (isFirst != null) {
-            isFirst.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    updateAPagar();
-                }
-            });
-        }
 
     }
 
