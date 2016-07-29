@@ -25,16 +25,7 @@ public abstract class DrawerMain extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -83,7 +74,7 @@ public abstract class DrawerMain extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_puerta_puerta) {
-            startActivity( new Intent(this,PuertaAPuertaActivity.class));
+            startActivity(new Intent(this, PuertaAPuertaActivity.class));
 
         } else if (id == R.id.nav_stars) {
             final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
@@ -93,17 +84,15 @@ public abstract class DrawerMain extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
             }
         } else if (id == R.id.nav_share) {
-            try
-            { Intent i = new Intent(Intent.ACTION_SEND);
+            try {
+                Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                 String sAux = getString(R.string.promo);
-                sAux = sAux + "https://play.google.com/store/apps/details?id="+  getPackageName() + " \n\n";
+                sAux = sAux + "https://play.google.com/store/apps/details?id=" + getPackageName() + " \n\n";
                 i.putExtra(Intent.EXTRA_TEXT, sAux);
                 startActivity(Intent.createChooser(i, "Elejí uno"));
-            }
-            catch(Exception e)
-            { //e.toString();
+            } catch (Exception e) { //e.toString();
             }
 
         }
@@ -113,7 +102,7 @@ public abstract class DrawerMain extends AppCompatActivity
         return true;
     }
 
-    protected void setView(){
-        setContentView(R.layout.activity_drawer_main);
-    }
+    protected abstract void setView();
+
+
 }
