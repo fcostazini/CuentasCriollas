@@ -18,6 +18,10 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class PuertaAPuertaActivity extends DrawerMain {
 
@@ -97,25 +101,34 @@ public class PuertaAPuertaActivity extends DrawerMain {
         TextView valorPesos = (TextView) findViewById(R.id.val_prod_peso);
         TextView valorImpuestos = (TextView) findViewById(R.id.val_imp_peso);
         TextView valorAPagar = (TextView) findViewById(R.id.val_a_pagar);
-        BigDecimal vProdVal = new BigDecimal(prodValue.getText().toString());
-        BigDecimal vCotizacion = new BigDecimal(cotizacion.getText().toString());
+        if (prodValue != null && prodValue.getText() != null && !prodValue.getText().toString().equals("")
+                && cotizacion != null && cotizacion.getText() != null && !cotizacion.getText().toString().equals("") &&
+                isFirst != null && valorPesos != null && valorImpuestos != null && valorAPagar != null) {
+            BigDecimal vProdVal = new BigDecimal(prodValue.getText().toString());
+            BigDecimal vCotizacion = new BigDecimal(cotizacion.getText().toString());
 
-        BigDecimal vProdPesos = vProdVal.multiply(vCotizacion);
-        BigDecimal vImpuesto = new BigDecimal(0);
-        if (isFirst.isChecked()) {
-            if (vProdVal.compareTo(new BigDecimal(25)) <= 0) {
-                vImpuesto = new BigDecimal(0);
+            BigDecimal vProdPesos = vProdVal.multiply(vCotizacion);
+            BigDecimal vImpuesto = new BigDecimal(0);
+            DecimalFormat formatter = (DecimalFormat) NumberFormat.getCurrencyInstance(Locale.getDefault());
+            DecimalFormatSymbols symbols = formatter.getDecimalFormatSymbols();
+            symbols.setCurrencySymbol(""); // Don't use null.
+            formatter.setDecimalFormatSymbols(symbols);
+
+            if (isFirst.isChecked()) {
+                if (vProdVal.compareTo(new BigDecimal(25)) <= 0) {
+                    vImpuesto = new BigDecimal(0);
+                } else {
+                    vImpuesto = vProdVal.subtract(new BigDecimal(25)).multiply(new BigDecimal(0.5)).multiply(vCotizacion);
+                }
             } else {
-                vImpuesto = vProdVal.subtract(new BigDecimal(25)).multiply(new BigDecimal(0.5)).multiply(vCotizacion);
+                vImpuesto = vProdVal.multiply(new BigDecimal(0.5)).multiply(vCotizacion);
             }
-        } else {
-            vImpuesto = vProdVal.multiply(new BigDecimal(0.5)).multiply(vCotizacion);
-        }
-        BigDecimal vAPagar = vProdPesos.add(vImpuesto);
+            BigDecimal vAPagar = vProdPesos.add(vImpuesto);
 
-        valorPesos.setText(vProdPesos.toString());
-        valorImpuestos.setText(vImpuesto.toString());
-        valorAPagar.setText(vAPagar.toString());
+            valorPesos.setText(formatter.format(vProdPesos.setScale(2, BigDecimal.ROUND_CEILING)));
+            valorImpuestos.setText(formatter.format(vImpuesto.setScale(2, BigDecimal.ROUND_CEILING)));
+            valorAPagar.setText(formatter.format(vAPagar.setScale(2, BigDecimal.ROUND_CEILING)));
+        }
     }
 
 }
