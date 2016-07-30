@@ -12,464 +12,474 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.studios.thinkup.cuentascriollas.PuertaAPuertaActivity">
 
-
-    <TextView
-        android:id="@+id/lab_sueldo_bruto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txt_sueldo_bruto"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/txt_sueldo_bruto"
-        android:gravity="center_vertical"
-        android:text="@string/sueldo_bruto"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
-
-    <EditText
-        android:id="@+id/txt_sueldo_bruto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textColor="#140c0c" />
-
-    <CheckBox
-        android:id="@+id/conyuge_acargo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/txt_sueldo_bruto"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txt_sueldo_bruto"
-        android:layout_marginTop="5dp"
-        android:checked="false"
-        android:text="@string/conyuge_a_cargo" />
-
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/conyuge_acargo"
-        android:layout_alignStart="@+id/txt_sueldo_bruto"
-        android:layout_alignTop="@+id/txt_sueldo_bruto"
-        android:layout_marginStart="20dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#140c0c" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/conyuge_acargo"
-        android:layout_marginTop="5dp"
-        android:text="@string/familiares_a_cargo"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView7"
-        android:layout_marginTop="5dp"
-        android:text="@string/cantidad_de_hijos"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView10"
-        android:layout_marginTop="5dp"
-        android:text="@string/cred_hipotecarios"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView13"
-        android:layout_marginTop="5dp"
-        android:text="@string/servicio_dom_stico"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView14"
-        android:layout_marginTop="5dp"
-        android:text="@string/seguro_de_vida"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView15"
-        android:layout_marginTop="5dp"
-        android:text="@string/gastos_sepelio"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/lab_descuentos_ganancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView16"
-        android:layout_marginTop="5dp"
-        android:text="@string/descuento_ganancias"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/desc_ganancia"
-        android:layout_marginTop="5dp"
-        android:text="@string/aportes"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txt_aportes"
-        android:layout_marginTop="5dp"
-        android:text="@string/descuentos_totales"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txt_desc"
-        android:layout_marginTop="5dp"
-        android:text="@string/sueldo_neto"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-
-    <TextView
-        android:id="@+id/desc_ganancia"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/lab_descuentos_ganancia"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="7dp"
-        android:background="@color/result_background"
-        android:paddingBottom="5dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="0dp"
-        android:paddingTop="2dp"
-        android:text="@string/zero"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@android:color/holo_red_dark"
-        android:textStyle="bold" />
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay">
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView18"
-        android:layout_alignStart="@+id/desc_ganancia"
-        android:layout_alignTop="@+id/desc_ganancia"
-        android:layout_marginStart="20dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@android:color/holo_red_dark" />
+        <TextView
+            android:id="@+id/lab_sueldo_bruto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_sueldo_bruto"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/txt_sueldo_bruto"
+            android:gravity="center_vertical"
+            android:text="@string/sueldo_bruto"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-    <TextView
-        android:id="@+id/txt_aportes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView18"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="7dp"
-        android:background="@color/result_background"
-        android:paddingBottom="5dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="0dp"
-        android:paddingTop="2dp"
-        android:text="@string/zero"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/text_common"
-        android:textStyle="bold" />
+        <EditText
+            android:id="@+id/txt_sueldo_bruto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hint="@string/sin_descuentos"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#140c0c" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView19"
-        android:layout_alignEnd="@+id/textView17"
-        android:layout_alignStart="@+id/txt_aportes"
-        android:layout_alignTop="@+id/txt_aportes"
-        android:layout_marginStart="20dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <CheckBox
+            android:id="@+id/conyuge_acargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_sueldo_bruto"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_sueldo_bruto"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:text="@string/conyuge_a_cargo" />
 
-    <TextView
-        android:id="@+id/txt_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView19"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="7dp"
-        android:background="@color/result_background"
-        android:paddingBottom="5dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="0dp"
-        android:paddingTop="2dp"
-        android:text="@string/zero"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/text_common"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/conyuge_acargo"
+            android:layout_alignStart="@+id/txt_sueldo_bruto"
+            android:layout_alignTop="@+id/txt_sueldo_bruto"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#140c0c" />
 
-    <TextView
-        android:id="@+id/txt_sueldo_neto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView20"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="7dp"
-        android:background="@color/result_background"
-        android:paddingBottom="5dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="0dp"
-        android:paddingTop="2dp"
-        android:text="@string/zero"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/conyuge_acargo"
+            android:layout_marginTop="5dp"
+            android:text="@string/familiares_a_cargo"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView20"
-        android:layout_alignEnd="@+id/textView21"
-        android:layout_alignStart="@+id/txt_desc"
-        android:layout_alignTop="@+id/txt_desc"
-        android:layout_marginStart="20dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="5dp"
+            android:text="@string/cantidad_de_hijos"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txt_sueldo_neto"
-        android:layout_alignEnd="@+id/textView22"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/txt_sueldo_neto"
-        android:layout_marginStart="20dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/holo_blue_dark" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="5dp"
+            android:text="@string/cred_hipotecarios"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignEnd="@+id/conyuge_acargo"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="5dp"
+            android:text="@string/servicio_dom_stico"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_alignStart="@+id/editText"
-        android:layout_alignTop="@+id/textView10"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="5dp"
+            android:text="@string/seguro_de_vida"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView14"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignTop="@+id/textView13"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="5dp"
+            android:text="@string/gastos_sepelio"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="7dp" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView14"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_alignTop="@+id/textView14"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/lab_descuentos_ganancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="5dp"
+            android:text="@string/descuento_ganancias"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView16"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_alignTop="@+id/textView15"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/desc_ganancia"
+            android:layout_marginTop="5dp"
+            android:text="@string/aportes"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView16"
-        android:layout_alignStart="@+id/editText5"
-        android:layout_alignTop="@+id/textView16"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="@string/sin_descuentos"
-        android:inputType="numberDecimal"
-        android:padding="8dp"
-        android:textAlignment="viewEnd"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_aportes"
+            android:layout_marginTop="5dp"
+            android:text="@string/descuentos_totales"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView16"
-        android:layout_alignStart="@+id/editText5"
-        android:layout_alignTop="@+id/editText5"
-        android:layout_marginStart="5dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c"
-        android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_desc"
+            android:layout_marginTop="5dp"
+            android:text="@string/sueldo_neto"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText4"
-        android:layout_alignEnd="@+id/textView24"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_alignTop="@+id/editText4"
-        android:layout_marginStart="5dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c"
-        android:textSize="12sp" />
+        <TextView
+            android:id="@+id/desc_ganancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_alignTop="@+id/editText3"
-        android:layout_marginStart="5dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c"
-        android:textSize="12sp" />
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lab_descuentos_ganancia"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/result_background"
+            android:paddingBottom="5dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp"
+            android:paddingTop="2dp"
+            android:text="@string/zero"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText6"
-        android:layout_alignEnd="@+id/textView24"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_alignTop="@+id/editText6"
-        android:layout_marginStart="5dp"
-        android:gravity="center"
-        android:text="@string/symbolo_pesos"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#140c0c"
-        android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView18"
+            android:layout_alignStart="@+id/desc_ganancia"
+            android:layout_alignTop="@+id/desc_ganancia"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark" />
 
+        <TextView
+            android:id="@+id/txt_aportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView18"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/result_background"
+            android:paddingBottom="5dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp"
+            android:paddingTop="2dp"
+            android:text="@string/zero"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_common"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView19"
+            android:layout_alignEnd="@+id/textView17"
+            android:layout_alignStart="@+id/txt_aportes"
+            android:layout_alignTop="@+id/txt_aportes"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView19"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/result_background"
+            android:paddingBottom="5dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp"
+            android:paddingTop="2dp"
+            android:text="@string/zero"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_common"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sueldo_neto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView20"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/result_background"
+            android:paddingBottom="5dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp"
+            android:paddingTop="2dp"
+            android:text="@string/zero"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView20"
+            android:layout_alignEnd="@+id/textView21"
+            android:layout_alignStart="@+id/txt_desc"
+            android:layout_alignTop="@+id/txt_desc"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_sueldo_neto"
+            android:layout_alignEnd="@+id/textView22"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/txt_sueldo_neto"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignEnd="@+id/conyuge_acargo"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView14"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_alignTop="@+id/textView14"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView16"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView16"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_alignTop="@+id/editText5"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_alignEnd="@+id/textView24"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_alignTop="@+id/editText4"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_alignTop="@+id/editText3"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText6"
+            android:layout_alignEnd="@+id/textView24"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_alignTop="@+id/editText6"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/symbolo_pesos"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#140c0c"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</ScrollView>
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"

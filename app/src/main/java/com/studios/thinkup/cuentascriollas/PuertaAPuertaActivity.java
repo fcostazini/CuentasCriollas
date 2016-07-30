@@ -1,6 +1,7 @@
 package com.studios.thinkup.cuentascriollas;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.CheckBox;
@@ -40,7 +41,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
                 }
 
                 @Override
-                public void afterTextChanged(Editable s) {
+                public void afterTextChanged(@NonNull Editable s) {
                     if (s.length() > 0) {
                         updateAPagar();
                     }
@@ -62,7 +63,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
                 }
 
                 @Override
-                public void afterTextChanged(Editable s) {
+                public void afterTextChanged(@NonNull Editable s) {
                     if (s.length() > 0) {
                         updateAPagar();
                     }
