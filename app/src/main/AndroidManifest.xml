@@ -14,6 +14,7 @@
         <activity
             android:name=".PuertaAPuertaActivity"
             android:label="@string/puerta_a_puerta"
+            android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:label="@string/puerta_a_puerta">
@@ -39,6 +40,7 @@
         <activity
             android:name=".GananciasActivity"
             android:label="@string/ganancias"
+            android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:label="@string/ganancias">

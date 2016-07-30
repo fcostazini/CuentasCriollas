@@ -88,7 +88,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
         setContentView(R.layout.activity_puerta_apuerta);
     }
 
-    protected void updateAPagar() {
+    private void updateAPagar() {
         EditText prodValue = (EditText) findViewById(R.id.inp_dolar);
         EditText cotizacion = (EditText) findViewById(R.id.valor_cotizacion);
         CheckBox isFirst = (CheckBox) findViewById(R.id.conyuge_acargo);
@@ -102,7 +102,7 @@ public class PuertaAPuertaActivity extends DrawerMain {
             BigDecimal vCotizacion = new BigDecimal(cotizacion.getText().toString());
 
             BigDecimal vProdPesos = vProdVal.multiply(vCotizacion);
-            BigDecimal vImpuesto = new BigDecimal(0);
+            BigDecimal vImpuesto;
             DecimalFormat formatter = (DecimalFormat) NumberFormat.getCurrencyInstance(Locale.getDefault());
             DecimalFormatSymbols symbols = formatter.getDecimalFormatSymbols();
             symbols.setCurrencySymbol(""); // Don't use null.

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "107051912890-0s9hft082aqbpmchblog1ocfoh6ldovq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.studios.thinkup.cuentascriollas",
+            "certificate_hash": "95D1B1DD1D4392014FD95E8F80467B06DC3E6C61"
+          }
+        },
+        {
           "client_id": "107051912890-7mpdpej5bj626p75ndh7vv7d4e284m30.apps.googleusercontent.com",
           "client_type": 3
         }

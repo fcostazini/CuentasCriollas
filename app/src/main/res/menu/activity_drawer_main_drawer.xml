@@ -13,16 +13,16 @@
 
     </group>
 
-    <item android:title="Compartir">
+    <item android:title="@string/compartir">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/invitar" />
             <item
                 android:id="@+id/nav_stars"
                 android:icon="@drawable/ic_stars"
-                android:title="Send" />
+                android:title="@string/calificar" />
         </menu>
     </item>
 

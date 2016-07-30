@@ -1,21 +1,9 @@
 package com.studios.thinkup.cuentascriollas;
 
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
-import java.util.Locale;
 
 public class GananciasActivity extends DrawerMain {
 
@@ -34,7 +22,7 @@ public class GananciasActivity extends DrawerMain {
         setContentView(R.layout.activity_ganancias);
     }
 
-    protected void updateAPagar() {
+   /* protected void updateAPagar() {
         EditText prodValue = (EditText) findViewById(R.id.inp_dolar);
         EditText cotizacion = (EditText) findViewById(R.id.valor_cotizacion);
         CheckBox isFirst = (CheckBox) findViewById(R.id.conyuge_acargo);
@@ -69,6 +57,6 @@ public class GananciasActivity extends DrawerMain {
             valorImpuestos.setText(formatter.format(vImpuesto.setScale(2, BigDecimal.ROUND_CEILING)));
             valorAPagar.setText(formatter.format(vAPagar.setScale(2, BigDecimal.ROUND_CEILING)));
         }
-    }
+    }*/
 
 }

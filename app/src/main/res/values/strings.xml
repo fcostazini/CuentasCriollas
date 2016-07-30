@@ -4,8 +4,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_puerta_apuerta">PuertaAPuertaActivity</string>
     <string name="puerta_a_puerta">Puerta a Puerta</string>
     <string name="promo">\nAlgo rapido para sacar cuentas?\n\n</string>
     <string name="ingrese_valor_dolares">Ingresá el valor de compra en dólares</string>
@@ -19,4 +17,24 @@
     <string name="ganancias">Ganancias</string>
     <string name="conyuge_a_cargo">Conyuge a cargo</string>
     <string name="sin_descuentos">Sin descuentos</string>
+    <string name="symbolo_pesos">$</string>
+    <string name="zero">0.00</string>
+    <string name="aportes">Aportes</string>
+    <string name="cantidad_de_hijos">Cantidad de hijos</string>
+    <string name="cred_hipotecarios">Cred. hipotecarios</string>
+    <string name="descuento_ganancias">Descuento Ganancias</string>
+    <string name="descuentos_totales">Descuentos Totales</string>
+    <string name="familiares_a_cargo">Familiares a cargo</string>
+    <string name="gastos_sepelio">Gastos sepelio</string>
+    <string name="seguro_de_vida">Seguro de vida</string>
+    <string name="servicio_dom_stico">Servicio doméstico</string>
+    <string name="cuentas_criollas_logo">Cuentas Criollas Logo</string>
+    <string name="cotizacion_default">15.00</string>
+    <string name="sueldo_bruto">Sueldo Bruto</string>
+    <string name="sueldo_neto">Sueldo Neto</string>
+    <string name="thinkup_url">http://www.thinkupstudios.com</string>
+    <string name="compartir">Compartir</string>
+    <string name="invitar">Invitar</string>
+    <string name="calificar">Send</string>
+    <string name="pick_one">Elejí uno</string>
 </resources>
